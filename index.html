@@ -7,23 +7,101 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="DemoSuite.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
     
 </head> 
 
 <!-- application -->
 <body> 
-    <div data-role="page" id="main" data-theme="a">
-    
+
+	<!-- MENU/LIST PAGE -->
+    <div data-role="page" id="menu-page" data-theme="a">
         <div data-role="header">
-            <h1>Title</h1>
-        </div><!-- /header -->
+            <h1>PhoneGap Demo Suite</h1>
+        </div>
         
         <div data-role="content">
-        	<p>Content</p>p>
-        </div><!-- /content -->
+        	<ul data-role="listview" data-theme="a" data-divider-theme="a">
+            	<li><a href="#xml-page">
+                	<h3>XML Loading</h3>
+                    <p>A small list is loaded in via XML and displayed in a collapsible list</p>
+                </a></li>
+                <li><a href="#maps-page">
+                	<h3>Google Maps</h3>
+                    <p>Your device's location is pinpointed and displayed on a map. Uses Google Maps API</p>
+                </a></li>
+                <li><a href="#accel-page">
+                	<h3>Accelerometer</h3>
+                    <p>Your device's accelerometer reading will be outputted to a text field</p>
+                </a></li>
+                <li><a href="#fb-page">
+                	<h3>Facebook</h3>
+                    <p>Your status can be updated through this page</p>
+                </a></li>
+                <li><a href="#twit-page">
+                	<h3>Twitter</h3>
+                    <p>You can send a tweet from this page</p>
+                </a></li>
+            </ul>
+        </div>
+    </div>
     
-    </div><!-- /page -->
+    <!-- XML PAGE -->
+    <div data-role="page" id="xml-page" data-theme="a" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>XML Loading Demo</h1>
+        </div>
+        
+        <div data-role="content">
+        	<p>Coming Soon . . .</p>
+        </div>
+    </div>
+    
+    <!-- GOOGLE MAPS PAGE -->
+    <div data-role="page" id="maps-page" data-theme="a" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>Google Maps API</h1>
+        </div>
+        
+        <div data-role="content">
+        	<p>Coming Soon . . .</p>
+        </div>
+    </div>
+    
+    <!-- ACCELERMOETER PAGE -->
+    <div data-role="page" id="accel-page" data-theme="a" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>Accelerometer API</h1>
+        </div>
+        
+        <div data-role="content">
+        	<p>Coming Soon . . .</p>
+        </div>
+    </div>
+    
+    <!-- FACEBOOK PAGE -->
+    <div data-role="page" id="fb-page" data-theme="a" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>Facebook API</h1>
+        </div>
+        
+        <div data-role="content">
+        	<p>Coming Soon . . .</p>
+        </div>
+    </div>
+    
+    <!-- TWITTER PAGE -->
+    <div data-role="page" id="twit-page" data-theme="a" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>Twitter API</h1>
+        </div>
+        
+        <div data-role="content">
+        	<p>Coming Soon . . .</p>
+        </div>
+    </div>
+    
 </div>
 
 </body>
