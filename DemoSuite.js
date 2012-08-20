@@ -13,10 +13,12 @@ $(document).bind( "pagechange", function( e, data ) {
 	
 	// get page id
 	if (typeof(data.toPage) == "object"){
-		var page = data.toPage.context.URL.split("#")[1];
+		var url = data.toPage.context.URL
+		var urlobj = $.mobile.path.parseUrl(url)
+		var page = urlobj.hash.substr(1);
 		
 		// switch
-		if (page != undefined) runPage(page);
+		if (page != "") runPage(page);
 	}
 });
 
