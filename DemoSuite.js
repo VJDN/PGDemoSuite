@@ -1,7 +1,9 @@
 
 // main init func - set global JQM settings here
 $(document).bind("mobileinit", function(){
+	alert($.mobile.defaultPageTransition);
 	$.mobile.defaultPageTransition = 'slide';
+	alert($.mobile.defaultPageTransition);
 	$.mobile.loader.prototype.options.text = "Loading . . .";
   	$.mobile.loader.prototype.options.textVisible = true;
   	$.mobile.loader.prototype.options.theme = "a";
