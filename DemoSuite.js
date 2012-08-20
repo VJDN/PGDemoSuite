@@ -30,6 +30,7 @@ function runPage(id) {
 	switch(id) {
 		
 		case 'xml-page':
+		alert(" -- " + $.mobile.defaultPageTransition);
 			xmlData == undefined ? fetchData() : displayXML();
 		break;
 		case 'maps-page':
