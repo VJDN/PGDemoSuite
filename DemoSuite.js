@@ -1,9 +1,7 @@
 
 // main init func - set global JQM settings here
 $(document).bind("mobileinit", function(){
-	alert($.mobile.defaultPageTransition);
 	$.mobile.defaultPageTransition = 'slide';
-	alert($.mobile.defaultPageTransition);
 	$.mobile.loader.prototype.options.text = "Loading . . .";
   	$.mobile.loader.prototype.options.textVisible = true;
   	$.mobile.loader.prototype.options.theme = "a";
@@ -30,7 +28,6 @@ function runPage(id) {
 	switch(id) {
 		
 		case 'xml-page':
-		alert(" -- " + $.mobile.defaultPageTransition);
 			xmlData == undefined ? fetchData() : displayXML();
 		break;
 		case 'maps-page':
@@ -57,7 +54,7 @@ function runPage(id) {
 function fetchData () {
 	
 	// show loader
-	// $.mobile.pageLoading();
+	$.mobile.loading( 'show' );
 	 
 	// load XML
 	$.ajax({
@@ -72,7 +69,7 @@ function fetchData () {
 function dataLoadComplete (data) {
 
 	// hide loader
-	// $.mobile.pageLoading(true);
+	$.mobile.loading( 'hide' );
 	
 	// save XML
 	xmlData = data;
@@ -85,7 +82,7 @@ function dataLoadError (xhr, ajaxOptions, thrownError){
 	alert('error: ' + thrownError);
 	
 	// hide loader
-	// $.mobile.pageLoading(true);
+	$.mobile.loading( 'hide' );
 }
 
 function displayXML(){
