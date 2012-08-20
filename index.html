@@ -5,6 +5,7 @@
 <head> 
 	<title>PhoneGap Demo Suite</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script src="DemoSuite.js"></script>
@@ -22,7 +23,7 @@
         </div>
         
         <div data-role="content">
-        	<ul data-role="listview" data-theme="a" data-divider-theme="a">
+        	<ul data-role="listview" data-theme="a">
             	<li><a href="#xml-page">
                 	<h3>XML Loading</h3>
                     <p>A small list is loaded in via XML and displayed in a collapsible list</p>
@@ -54,9 +55,21 @@
         </div>
         
         <div data-role="content">
-        	<p>Coming Soon . . .</p>
+        	<ul data-role="listview" id="xml-list" data-theme="a" data-inset="true" />
         </div>
     </div>
+    <!--------------------------------->
+                <!-- XML DETAIL PAGE -->
+                <div data-role="page" id="xml-detail-page" data-theme="a" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>XML Detail Page</h1>
+                    </div>
+                    
+                    <div data-role="content">
+                        <p>Coming Soon . . .</p>
+                    </div>
+                </div>
+	<!--------------------------------->
     
     <!-- GOOGLE MAPS PAGE -->
     <div data-role="page" id="maps-page" data-theme="a" data-add-back-btn="true">

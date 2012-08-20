@@ -1,0 +1,26 @@
+<xml>
+	<item id="001">
+		<title>Thing 1</title>
+		<content>This is thing 1, isnt it awesome?</content>
+	</item>
+	
+	<item id="002">
+		<title>Thing 2</title>
+		<content>This is thing 2, its not as good, but at least its trying, right?</content>
+	</item>
+	
+	<item id="003">
+		<title>Thing 3</title>
+		<content>This is thing 3, I wouldnt even bother if I was you</content>
+	</item>
+	
+	<item id="004">
+		<title>Thing 4</title>
+		<content>This is thing 4, i tthinks its waaaaaay better than the rest, but its not all its cracked up to be</content>
+	</item>
+	
+	<item id="005">
+		<title>Thing 5</title>
+		<content>This is thing 5, never heard of it before but everyones been talking about it</content>
+	</item>
+</xml>
